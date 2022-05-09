@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f9439e8-8c16-425e-b723-a059a084341b" name="Changes" comment="">
+    <list default="true" id="4f9439e8-8c16-425e-b723-a059a084341b" name="Changes" comment="All questions working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/quiz.java" afterDir="false" />
     </list>
@@ -58,8 +58,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652104714345</updated>
-      <workItem from="1652104716932" duration="1400000" />
+      <workItem from="1652104716932" duration="2062000" />
     </task>
+    <task id="LOCAL-00001" summary="First question working">
+      <created>1652106204309</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652106204309</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -75,5 +83,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First question working" />
+    <MESSAGE value="All questions working" />
+    <option name="LAST_COMMIT_MESSAGE" value="All questions working" />
   </component>
 </project>
