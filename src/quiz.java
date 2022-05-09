@@ -35,10 +35,10 @@ public class quiz {
             score++;
         }
 
-        //        while answer is blank, keep asking for an answer
+//        while answer is blank, keep asking for an answer
         answer="";
         while (answer.equals("")) {
-            System.out.println("Which of these boxers was a heavyweight?");
+            System.out.println("Which of these boxers was/is a heavyweight?");
             System.out.println("A: Tyson Fury");
             System.out.println("B: Guillermo Rigondeaux");
             System.out.println("C: Tommy Hearns");
