@@ -1,12 +1,39 @@
 import java.util.Scanner;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.File;
+import java.io.FileNotFoundException;
 
 public class quiz {
     public static void main(String[] args) {
-        //        initialise variables in global scope
+//        initialise variables in global scope
         String answer = "";
-        int score = 0;
+        Integer score = 0;
 
         Scanner in = new Scanner(System.in);
+
+//        introduction and ask for a username
+        System.out.println("Hello there, please enter the username you would like to play under");
+        String username = in.nextLine();
+
+//        try to find the previous score
+        try {
+            File f = new File("score.txt");
+            Scanner myReader = new Scanner(f);
+//        if previous score is found, display it
+            while (myReader.hasNextLine()) {
+                String lastName = myReader.nextLine();
+                String lastScore = myReader.nextLine();
+                System.out.println("The previous player had a username of " + lastName + " and a score of " + lastScore);
+            }
+            myReader.close();
+//        otherwise, display that no previous score has been found
+        } catch (FileNotFoundException e) {
+            System.out.println("No previously saved score was found.");
+        }
+
+//        display an introductory statement
+        System.out.println("Okay " + username + ", here's the first question of the quiz:");
 
 //        while answer is blank, keep asking for an answer
         while (answer.equals("")) {
@@ -17,6 +44,7 @@ public class quiz {
             System.out.println("D: Lennox Lewis");
             answer = in.nextLine().toUpperCase();
         }
+//        increment score, if answer is correct
         if (answer.equals("C")) {
             score++;
         }
@@ -31,6 +59,7 @@ public class quiz {
             System.out.println("D: Robero Duran");
             answer = in.nextLine().toUpperCase();
         }
+//        increment score, if answer is correct
         if (answer.equals("B")) {
             score++;
         }
@@ -45,11 +74,25 @@ public class quiz {
             System.out.println("D: Willie Pep");
             answer = in.nextLine().toUpperCase();
         }
+//        increment score, if answer is correct
         if (answer.equals("A")) {
             score++;
         }
 
-        System.out.println("Congratualations on completing the quiz, you achieved a final score of " + score);
+//        display end of quiz message, with the score achieved
+        System.out.println("Congratulations on completing the quiz " + username + ", you achieved a final score of " + score);
 
+        try {
+            FileWriter myWriter = new FileWriter("score.txt");
+            myWriter.write(username);
+            myWriter.write(System.getProperty("line.separator"));
+            myWriter.write(score.toString());
+//        following line is very important
+            myWriter.close();
+            System.out.println("Your score has been successfully saved.");
+        } catch (IOException e) {
+            System.out.println("An error occurred when attempting to save your score.");
+            e.printStackTrace();
+        }
     }
 }

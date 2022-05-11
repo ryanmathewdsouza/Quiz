@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f9439e8-8c16-425e-b723-a059a084341b" name="Changes" comment="All questions working">
+    <list default="true" id="4f9439e8-8c16-425e-b723-a059a084341b" name="Changes" comment="Level 2 established - Previous username and score now displayed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/quiz.java" afterDir="false" />
     </list>
@@ -20,6 +20,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/quiz.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -33,7 +36,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/fat_m/IdeaProjects/createFile"
   }
 }]]></component>
   <component name="RunManager">
@@ -58,7 +62,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652104714345</updated>
-      <workItem from="1652104716932" duration="3001000" />
+      <workItem from="1652104716932" duration="3113000" />
+      <workItem from="1652274141428" duration="64000" />
+      <workItem from="1652278925574" duration="1385000" />
+      <workItem from="1652280375495" duration="5480000" />
     </task>
     <task id="LOCAL-00001" summary="First question working">
       <created>1652106204309</created>
@@ -74,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652106876257</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Last question correctly re-worded">
+      <created>1652109342268</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1652109342268</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,6 +108,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First question working" />
     <MESSAGE value="All questions working" />
-    <option name="LAST_COMMIT_MESSAGE" value="All questions working" />
+    <MESSAGE value="Last question correctly re-worded" />
+    <MESSAGE value="Level 2 established - Previous username and score now displayed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Level 2 established - Previous username and score now displayed" />
   </component>
 </project>
